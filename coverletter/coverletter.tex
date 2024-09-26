@@ -1,0 +1,53 @@
+\documentclass[DIN, 11pt, pagenumber=false, parskip=half,% 
+               fromalign=left, %fromphone=true,%  
+               fromemail=true, fromurl=false, %
+               fromfax=true, backaddress=false,
+               %fromrule=none, %=afteraddress
+               foldmarks=blmtP, foldmarks=false]{scrlttr2}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{helvet}
+\usepackage{eurosym}
+\usepackage{times}
+\RequirePackage{graphicx}
+\usepackage[margin=2.0cm]{geometry}
+
+\setkomavar{fromname}{Gavin Belson}
+\setkomavar{fromaddress}{1234 Hooli Drive\\ Palo Alto, CA 94301}
+\setkomavar*{fromfax}{Tel.: +1 650 555 1234}
+\setkomavar{fromemail}{gavin.belson@hooli.com}
+\setkomavar{subject}{Application for Strategic Technology Leadership Position}
+
+\setkomavar{date}{\today}
+\setkomavar{place}{Palo Alto, CA}
+
+\renewcommand*{\raggedsignature}{\raggedright} 
+\setkomavar{signature}{ \includegraphics[width=3.5cm]{signature.png}\\
+  Gavin Belson}
+\makeatletter%
+\@setplength{sigbeforevskip}{0pt}
+\makeatother%  
+
+\begin{document}
+
+\begin{letter}{
+Tech Innovators Inc. \\
+500 Innovation Way \\
+San Francisco, CA 94105 \\
+}
+
+\opening{Dear Hiring Team,}
+
+As the former CEO and Chief Visionary Officer of Hooli, one of the most influential technology companies of the past decade, I have always been at the forefront of technological innovation and strategic leadership. I am reaching out to you because I believe your company's mission aligns with my passion for transforming the tech world through groundbreaking advancements.
+
+At Hooli, I led the development and implementation of pivotal technologies such as the Nucleus data compression platform and the Fusion cloud architecture. These innovations have fundamentally shaped how we approach data management and scalability today. I have overseen global expansion, managed strategic acquisitions, and scaled Hooli into a market leader, all while maintaining a focus on ethical technology development.
+
+I am confident that my extensive experience in leading teams, navigating complex technological challenges, and driving industry-shifting innovations will allow me to contribute significantly to your continued success. Please find attached my resume detailing my achievements and professional experience.
+
+I look forward to discussing how I can help your organization maintain its cutting-edge position in the industry.
+
+\closing{Best regards,}
+
+\end{letter}
+\end{document}

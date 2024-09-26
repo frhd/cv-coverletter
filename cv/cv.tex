@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+
+\usepackage[TextAligned]{currvita}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman, english]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{mathptmx}
+\usepackage{tabu}
+\usepackage{ifthen}
+
+\pagestyle{empty}
+\geometry{a4paper,left=30mm,right=30mm,top=20mm,bottom=15mm}
+
+\newboolean{english}
+\setboolean{english}{true} % Set to 'true' for English, 'false' for German
+
+\begin{document}
+
+\ifthenelse{\boolean{english}}{
+    \section*{\LARGE{Curriculum Vit\ae}}
+}{
+    \section*{\LARGE{Lebenslauf}}
+}
+\vspace{0.1cm}
+
+\begin{cv}{}
+
+\noindent
+  \begin{minipage}[t]{0.65\textwidth}
+    \raggedleft
+    \hspace{11.0cm}  
+    \ifthenelse{\boolean{english}}{
+    \Large{\textbf{Gavin Belson}} \\
+    \vspace{0.1cm} 
+    \small 
+    Born in 1969 \\
+    in California, USA \\
+    Marital Status: Single \\
+    Nationality: American
+}{
+    \Large{\textbf{Gavin Belson}} \\
+    \vspace{0.1cm}
+    \small 
+    geboren im Jahr 1969 \\
+    in Kalifornien, USA \\
+    Familienstand: Single \\
+    Nationalität: US-Amerikaner
+}
+	\end{minipage}
+  \begin{minipage}[t]{0.4\textwidth}
+    \raggedleft
+    \vspace{-0.3cm} 
+    \includegraphics[width=5cm]{headshot.png} 
+  \end{minipage}
+
+
+  \vspace{0.5cm} 
+
+   \begin{cvlist}{\ifthenelse{\boolean{english}}{Contact}{Kontakt}}
+ 	  \item[Private] 1234 Hooli Drive, Palo Alto, CA 94301 \\
+ 	  		Tel.: +1 650 555 1234 \\
+ 	    	E-Mail: gavin.belson@hooli.com
+   \end{cvlist}
+
+  \begin{cvlist}{\ifthenelse{\boolean{english}}{Work Experience}{Berufserfahrung}}
+    \item[2013 -- 2019] \ifthenelse{\boolean{english}}{CEO at Hooli, Palo Alto, California \\ Led Hooli to the top of the tech industry, implementing groundbreaking technologies such as Nucleus and Fusion.}{
+    CEO bei Hooli, Palo Alto, Kalifornien \\ Führte Hooli an die Spitze der Tech-Industrie, implementierte bahnbrechende Technologien wie Nucleus und Fusion.}
+  	\item[1995 -- 2013] \ifthenelse{\boolean{english}}{Founder and Chief Visionary Officer, Hooli \\ Supervised the foundation and growth of Hooli, responsible for global expansion and strategic acquisitions.}{
+    Gründer und Chief Visionary Officer, Hooli \\ Überwachte die Gründung und das Wachstum von Hooli, verantwortlich für die globale Expansion und strategische Akquisitionen.}
+    \item[1991 -- 1995] \ifthenelse{\boolean{english}}{Product Manager, Hooli \\ Developed and introduced innovative products in software and cloud computing.}{
+    Produktmanager, Hooli \\ Entwicklung und Einführung innovativer Produkte im Bereich Software und Cloud-Computing.}
+  \end{cvlist}
+
+  \begin{cvlist}{\ifthenelse{\boolean{english}}{Education}{Bildungsweg}}
+  	\item[1987 -- 1991] \ifthenelse{\boolean{english}}{\textbf{Bachelor of Arts:} Economics and Finance \\ Harvard University, Cambridge, Massachusetts \\ \emph{Focus:} Economics, Finance}{
+  	\textbf{Bachelor of Arts:} Economics and Finance \\ Harvard University, Cambridge, Massachusetts \\ \emph{Schwerpunkte:} Wirtschaftswissenschaften, Finanzen}
+  \end{cvlist}
+  
+  \begin{cvlist}{\ifthenelse{\boolean{english}}{Key Projects}{Herausragende Projekte}}
+    \item[Nucleus] \ifthenelse{\boolean{english}}{Development and introduction of a groundbreaking data compression platform}{
+    Entwicklung und Einführung einer bahnbrechenden Datenkompressionsplattform}
+    \item[Fusion] \ifthenelse{\boolean{english}}{Led Fusion, an innovative cloud technology}{
+    Führte Fusion ein, eine innovative Cloud-Technologie}
+  \end{cvlist}
+
+\begin{cvlist}{\ifthenelse{\boolean{english}}{Technical Skills}{Technische Erfahrung}}
+	\item[Over 20 years] \ifthenelse{\boolean{english}}{Leading software development and strategy for global tech organizations}{Führende Softwareentwicklung und Strategie für globale Tech-Organisationen}
+	\item[Over 15 years] \ifthenelse{\boolean{english}}{Cloud technologies, data compression, artificial intelligence}{Cloud-Technologien, Datenkompression, Künstliche Intelligenz}
+\end{cvlist}
+
+\begin{cvlist}{\ifthenelse{\boolean{english}}{Mottos}{Leitsprüche}}
+    \item \emph{"\ifthenelse{\boolean{english}}{Hooli isn’t just about software. Hooli is about people.}{Hooli ist nicht nur Software. Hooli geht um Menschen.}"}
+    \item \emph{"\ifthenelse{\boolean{english}}{If we can make your audio and video files smaller, we can make cancer smaller.}{Wenn wir Ihre Audio- und Videodateien kleiner machen können, können wir auch Krebs kleiner machen.}"}
+\end{cvlist}
+  
+  \vspace{-0cm}
+  \begin{cvlist}{\ifthenelse{\boolean{english}}{International Experience}{Auslandserfahrung}}
+	\item[\ifthenelse{\boolean{english}}{Extensive business trips worldwide to promote Hooli and its projects}{Vielseitige Geschäftsreisen weltweit zur Förderung von Hooli und seinen Projekten}]
+  	\item[\ifthenelse{\boolean{english}}{Comprehensive networking experience in the global tech sector}{Umfassende Netzwerkerfahrung im globalen Tech-Sektor}]
+  \end{cvlist}
+  
+  \subsection*{\ifthenelse{\boolean{english}}{References}{Referenzen}} 
+  \vspace{0.25cm}
+  \begin{tabularx}{\linewidth}{XX}
+  	 \textbf{Denpok Sharma} 		& 	\textbf{Big Head} 	\\
+  	Personal Advisor 			 		& 	Former Hooli Manager \\
+  	E-Mail: denpok@hooli.com			 		& 	E-Mail: bighead@hooli.com \\
+  \end{tabularx}
+  
+  \vspace{1.5cm}
+  \includegraphics[width=4.5cm]{signature.png}
+   \vspace{-0.5cm}
+  \cvplace{Palo Alto, Kalifornien}
+  \date{\today}
+  
+\end{cv}
+
+\end{document}
