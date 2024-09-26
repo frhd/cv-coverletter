@@ -13,7 +13,7 @@ To compile the documents:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cv-coverletter-template.git
+   git clone https://github.com/frhd/cv-coverletter-template.git
    ```
 
 2. Navigate into the project directory:
@@ -34,8 +34,4 @@ To compile the documents:
 
 ## Customization
 
-You can modify the templates by replacing the placeholder information (name, contact details, experience, etc.) with your own. Both files are designed to be easily adaptable to suit your needs. You can start from the great example set by our dear tech guru and impresario Gavin Belson.
-
-## License
-
-This repository is provided as a template and can be freely used and modified.
+You can modify the templates by replacing the placeholder information (name, contact details, experience, etc.) with your own. You can start from the great example set by our dear tech guru and impresario Gavin Belson.
